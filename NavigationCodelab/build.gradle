@@ -15,10 +15,16 @@
  */
 
 buildscript {
+
+    ext {
+        composeNavigationVersion = '2.5.0-rc01'
+    }
+
     repositories {
         google()
         mavenCentral()
     }
+
 
     dependencies {
         classpath "com.android.tools.build:gradle:7.3.1"

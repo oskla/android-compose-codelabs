@@ -52,6 +52,7 @@ fun AccountsScreen(
                 number = account.number,
                 amount = account.balance,
                 color = account.color
+
             )
         }
     )
@@ -71,6 +72,7 @@ fun SingleAccountScreen(
         amounts = { account.balance },
         amountsTotal = account.balance,
         circleLabel = account.name,
+
     ) { row ->
         AccountRow(
             name = row.name,
@@ -80,3 +82,4 @@ fun SingleAccountScreen(
         )
     }
 }
+
